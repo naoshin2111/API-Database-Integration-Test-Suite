@@ -1,0 +1,11 @@
+{
+  "insertAuthor": "INSERT INTO authors (name, login, email) VALUES ('%s', '%s', '%s')",
+  "insertProject": "INSERT INTO projects (name) VALUES ('%s')",
+  "selectAuthorByLogin": "SELECT * FROM author WHERE login = '%s'",
+  "selectProjectByName": "SELECT * FROM project WHERE name = '%s'",
+  "insertSession": "INSERT INTO session (session_key, build_number) VALUES ('%s',%d)",
+  "insertTest": "INSERT INTO test (name, status_id, method_name, project_id, session_id, end_time, env, browser, author_id) VALUES ('%s', %d, '%s', %d, %d, '%s', '%s', '%s', %d)",
+  "selectTestWithRepeatingID": "SELECT * FROM test WHERE id REGEXP '([0-9])\\\\1' LIMIT %d",
+  "updateTest": "UPDATE test SET name = '%s', env = '%s', browser = '%s' WHERE id = %d",
+  "deleteBatchTest": "DELETE FROM test WHERE id IN (%s)"
+}

@@ -1,0 +1,5 @@
+{
+  "baseUri": "https://jsonplaceholder.typicode.com",
+  "env": "GRIGORYEVS",
+  "browser": "no-browser"
+}
